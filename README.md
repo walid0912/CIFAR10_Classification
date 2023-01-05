@@ -5,7 +5,17 @@ Image Classification on CIFAR10 Dataset using CNNs, Python and Tensorflow
 Le jeu de données CIFAR-10 est composé de 60 000 images couleur 32x32 réparties en 10 classes, avec 6 000 images par classe. Il y a 50000 images d'entraînement et 10000 images de test.
 
 # Data Augmentation
+Dans Keras, nous avons une classe ImageDataGenerator qui est utilisée pour générer des lots de données d'images tensorielles avec une augmentation des données en temps réel. Les données seront bouclées (par lots) indéfiniment. Les données d'image sont générées en transformant les images d'entraînement réelles par rotation, recadrage, décalage, cisaillement, zoom, retournement, réflexion, normalisation, etc.
 
+```
+
+from keras.preprocessing.image import ImageDataGenerator
+datagen = ImageDataGenerator( rotation_range=90,
+                 width_shift_range=0.1, height_shift_range=0.1,
+                 horizontal_flip=True)
+datagen.fit(x_train)
+
+```
 
 # Architecture CNN 
 
