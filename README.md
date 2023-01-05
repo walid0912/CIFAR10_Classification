@@ -48,3 +48,9 @@ datagen.fit(x_train)
 
 # Results
 
+| Metric        |    Value    | 
+| :---   |  ---:   |
+| loss    |     0.6202     |     
+| accuracy  |       0.8434      |  
+| val_accuracy |     0.8372        |
+| val_loss | 0.6486 | 
