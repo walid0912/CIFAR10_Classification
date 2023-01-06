@@ -4,15 +4,9 @@
 from google.colab import drive
 drive.mount('/content/drive')
 
-# Commented out IPython magic to ensure Python compatibility.
 # Pour importer les outils 
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-try:
-  # %tensorflow_version only exists in Colab.
-#   %tensorflow_version 2.x
-except Exception:
-  pass
 import tensorflow as tf
 
 from tensorflow.keras import datasets, layers, models, Model
